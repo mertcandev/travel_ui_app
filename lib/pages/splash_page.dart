@@ -44,7 +44,7 @@ class SplashPage extends StatelessWidget {
               child: CircularProgressIndicator(
                 valueColor: AlwaysStoppedAnimation<Color>(
                     Colors.white.withOpacity(0.8)),
-                strokeWidth: 5,
+                strokeWidth: 4,
               ),
             ),
           ),
