@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:travel_ui_app/pages/main_page.dart';
 import 'package:travel_ui_app/utilities.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
@@ -50,39 +51,46 @@ class IntroductionScreen extends StatelessWidget {
                     expansionFactor: 1.4),
               ),
               SizedBox(height: 80),
-              Container(
-                width: MediaQuery.of(context).size.width * 0.6,
-                height: 60,
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(18),
-                    color: Utils.mainOrange,
-                    boxShadow: [
-                      BoxShadow(
-                          color: Utils.mainOrange.withOpacity(0.2),
-                          blurRadius: 10,
-                          spreadRadius: 10,
-                          offset: Offset(0.0, 5))
-                    ]),
-                child: Center(
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text(
-                        "Get Started",
-                        style: GoogleFonts.varelaRound(
-                            fontSize: 22,
-                            color: Colors.white,
-                            fontWeight: FontWeight.w800),
-                      ),
-                      SizedBox(
-                        width: MediaQuery.of(context).size.width * 0.05,
-                      ),
-                      Icon(
-                        Icons.arrow_forward_rounded,
-                        color: Colors.white,
-                        size: 24,
-                      )
-                    ],
+              InkWell(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(
+                      MaterialPageRoute(builder: (context) => MainPage()));
+                },
+                child: Container(
+                  width: MediaQuery.of(context).size.width * 0.6,
+                  height: 60,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(18),
+                      color: Utils.mainOrange,
+                      boxShadow: [
+                        BoxShadow(
+                            color:
+                                Color.fromRGBO(240, 90, 34, 1).withOpacity(0.2),
+                            blurRadius: 20,
+                            spreadRadius: 10,
+                            offset: Offset(0.0, 0))
+                      ]),
+                  child: Center(
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          "Get Started",
+                          style: GoogleFonts.varelaRound(
+                              fontSize: 22,
+                              color: Colors.white,
+                              fontWeight: FontWeight.w800),
+                        ),
+                        SizedBox(
+                          width: MediaQuery.of(context).size.width * 0.05,
+                        ),
+                        Icon(
+                          Icons.arrow_forward_rounded,
+                          color: Colors.white,
+                          size: 24,
+                        )
+                      ],
+                    ),
                   ),
                 ),
               )

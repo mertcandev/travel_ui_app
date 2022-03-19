@@ -26,9 +26,8 @@ class SplashPage extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(Icons.airlines_rounded,
-                      color: Colors.white, size: 50),
-                  Text("travellify",
+                  Icon(Icons.airlines_rounded, color: Colors.white, size: 50),
+                  Text("travelify",
                       style: GoogleFonts.mavenPro(
                           textStyle: TextStyle(
                               fontSize: 40,
