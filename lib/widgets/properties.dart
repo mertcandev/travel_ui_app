@@ -23,7 +23,7 @@ class Properties extends StatelessWidget {
         children: [
           Container(
             margin: EdgeInsets.symmetric(vertical: 10),
-            width: 300,
+            width: 290,
             decoration: BoxDecoration(
                 color: Utils.iScreenBackground,
                 boxShadow: [
@@ -41,12 +41,12 @@ class Properties extends StatelessWidget {
                 borderRadius: BorderRadius.circular(20)),
             child: Padding(
               padding: const EdgeInsets.only(
-                  top: 15, right: 15, left: 15, bottom: 20),
+                  top: 12, right: 12, left: 12, bottom: 15),
               child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Container(
-                      height: 140,
+                      height: 150,
                       width: 280,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
@@ -145,12 +145,12 @@ class Properties extends StatelessWidget {
                 borderRadius: BorderRadius.circular(20)),
             child: Padding(
               padding: const EdgeInsets.only(
-                  top: 15, right: 15, left: 15, bottom: 20),
+                  top: 12, right: 12, left: 12, bottom: 15),
               child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Container(
-                      height: 140,
+                      height: 150,
                       width: 280,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
@@ -249,12 +249,12 @@ class Properties extends StatelessWidget {
                 borderRadius: BorderRadius.circular(20)),
             child: Padding(
               padding: const EdgeInsets.only(
-                  top: 15, right: 15, left: 15, bottom: 20),
+                  top: 12, right: 12, left: 12, bottom: 15),
               child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Container(
-                      height: 140,
+                      height: 150,
                       width: 280,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),

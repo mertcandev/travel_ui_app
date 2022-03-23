@@ -6,6 +6,7 @@ import 'package:travel_ui_app/widgets/main_header.dart';
 import 'package:travel_ui_app/widgets/our_properties.dart';
 import 'package:travel_ui_app/widgets/places.dart';
 import 'package:travel_ui_app/widgets/popular.dart';
+import 'package:travel_ui_app/widgets/popular_properties.dart';
 import 'package:travel_ui_app/widgets/properties.dart';
 import 'package:travel_ui_app/widgets/search.dart';
 
@@ -24,21 +25,42 @@ class _MainPageState extends State<MainPage> {
       backgroundColor: Utils.iScreenBackground,
       body: Container(
         decoration: BoxDecoration(),
-        child: Column(
-          children: [
-            HeaderWidget(),
-            SizedBox(height: 20),
-            SearchBar(),
-            SizedBox(height: 30),
-            Places(),
-            SizedBox(height: 30),
-            OurProperties(),
-            SizedBox(height: 10),
-            Properties(),
-            SizedBox(height: 20),
-            Popular()
-          ],
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              HeaderWidget(),
+              SizedBox(height: 20),
+              SearchBar(),
+              SizedBox(height: 30),
+              Places(),
+              SizedBox(height: 20),
+              OurProperties(),
+              SizedBox(height: 10),
+              Properties(),
+              SizedBox(height: 10),
+              Popular(),
+              PopularProperties()
+            ],
+          ),
         ),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        elevation: 10,
+        selectedItemColor: Utils.mainOrange,
+        unselectedItemColor: Utils.mainOrange.withOpacity(0.4),
+        items: [
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.home,
+                size: 30,
+              ),
+              label: ""),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.notifications, size: 25), label: ""),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.bookmark, size: 25), label: ""),
+          BottomNavigationBarItem(icon: Icon(Icons.person, size: 25), label: "")
+        ],
       ),
     );
   }
