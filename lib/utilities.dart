@@ -9,6 +9,7 @@ class Utils {
   static const Color searchExpColor = Color(0xff2D2D2D);
   static const Color searchBarTextColor = Color(0xff595959);
   static const Color searchBarIconColor = Color(0xff263238);
+  static const Color propertyNameColor = Color(0xff292931);
   static BoxShadow genericBoxShadow = BoxShadow(
       color: Utils.mainOrange.withOpacity(0.2),
       blurRadius: 7,

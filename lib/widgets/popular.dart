@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:travel_ui_app/utilities.dart';
 
-class OurProperties extends StatelessWidget {
-  const OurProperties({Key? key}) : super(key: key);
+class Popular extends StatelessWidget {
+  const Popular({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +13,7 @@ class OurProperties extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Text(
-            "Our Properties",
+            "Popular",
             style: GoogleFonts.varelaRound(
                 fontSize: 30,
                 color: Utils.searchExpColor,

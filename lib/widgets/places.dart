@@ -9,66 +9,69 @@ class Places extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      children: [
-        Column(
-          children: [
-            CircleAvatar(
-              radius: 30,
-              backgroundImage: AssetImage("assets/india.jpg"),
-            ),
-            SizedBox(height: 10),
-            Text("India",
-                style: GoogleFonts.varelaRound(
-                    fontSize: 14,
-                    color: Utils.searchBarTextColor,
-                    fontWeight: FontWeight.w900))
-          ],
-        ),
-        Column(
-          children: [
-            CircleAvatar(
-              radius: 30,
-              backgroundImage: AssetImage("assets/newyork.jpg"),
-            ),
-            SizedBox(height: 10),
-            Text("New York",
-                style: GoogleFonts.varelaRound(
-                    fontSize: 14,
-                    color: Utils.searchBarTextColor,
-                    fontWeight: FontWeight.w900))
-          ],
-        ),
-        Column(
-          children: [
-            CircleAvatar(
-              radius: 30,
-              backgroundImage: AssetImage("assets/australia.jpg"),
-            ),
-            SizedBox(height: 10),
-            Text("Australia",
-                style: GoogleFonts.varelaRound(
-                    fontSize: 14,
-                    color: Utils.searchBarTextColor,
-                    fontWeight: FontWeight.w900))
-          ],
-        ),
-        Column(
-          children: [
-            CircleAvatar(
-              radius: 30,
-              backgroundImage: AssetImage("assets/poland.jpg"),
-            ),
-            SizedBox(height: 10),
-            Text("Poland",
-                style: GoogleFonts.varelaRound(
-                    fontSize: 14,
-                    color: Utils.searchBarTextColor,
-                    fontWeight: FontWeight.w900))
-          ],
-        )
-      ],
+    return Padding(
+      padding: const EdgeInsets.only(right: 30, left: 30),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Column(
+            children: [
+              CircleAvatar(
+                radius: 30,
+                backgroundImage: AssetImage("assets/india.jpg"),
+              ),
+              SizedBox(height: 10),
+              Text("India",
+                  style: GoogleFonts.varelaRound(
+                      fontSize: 14,
+                      color: Utils.searchBarTextColor,
+                      fontWeight: FontWeight.w900))
+            ],
+          ),
+          Column(
+            children: [
+              CircleAvatar(
+                radius: 30,
+                backgroundImage: AssetImage("assets/newyork.jpg"),
+              ),
+              SizedBox(height: 10),
+              Text("New York",
+                  style: GoogleFonts.varelaRound(
+                      fontSize: 14,
+                      color: Utils.searchBarTextColor,
+                      fontWeight: FontWeight.w900))
+            ],
+          ),
+          Column(
+            children: [
+              CircleAvatar(
+                radius: 30,
+                backgroundImage: AssetImage("assets/australia.jpg"),
+              ),
+              SizedBox(height: 10),
+              Text("Australia",
+                  style: GoogleFonts.varelaRound(
+                      fontSize: 14,
+                      color: Utils.searchBarTextColor,
+                      fontWeight: FontWeight.w900))
+            ],
+          ),
+          Column(
+            children: [
+              CircleAvatar(
+                radius: 30,
+                backgroundImage: AssetImage("assets/poland.jpg"),
+              ),
+              SizedBox(height: 10),
+              Text("Poland",
+                  style: GoogleFonts.varelaRound(
+                      fontSize: 14,
+                      color: Utils.searchBarTextColor,
+                      fontWeight: FontWeight.w900))
+            ],
+          )
+        ],
+      ),
     );
   }
 }
