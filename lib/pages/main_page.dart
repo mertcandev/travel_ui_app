@@ -25,23 +25,30 @@ class _MainPageState extends State<MainPage> {
       backgroundColor: Utils.iScreenBackground,
       body: Container(
         decoration: BoxDecoration(),
-        child: SingleChildScrollView(
-          child: Column(
-            children: [
-              HeaderWidget(),
-              SizedBox(height: 20),
-              SearchBar(),
-              SizedBox(height: 30),
-              Places(),
-              SizedBox(height: 20),
-              OurProperties(),
-              SizedBox(height: 10),
-              Properties(),
-              SizedBox(height: 10),
-              Popular(),
-              PopularProperties()
-            ],
-          ),
+        child: Column(
+          children: [
+            HeaderWidget(),
+            SizedBox(height: 20),
+            SearchBar(),
+            Expanded(
+              child: SingleChildScrollView(
+                physics: BouncingScrollPhysics(),
+                child: Column(
+                  children: [
+                    SizedBox(height: 30),
+                    Places(),
+                    SizedBox(height: 20),
+                    OurProperties(),
+                    SizedBox(height: 10),
+                    Properties(),
+                    SizedBox(height: 10),
+                    Popular(),
+                    PopularProperties()
+                  ],
+                ),
+              ),
+            )
+          ],
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(

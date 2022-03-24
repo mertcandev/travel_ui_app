@@ -21,7 +21,7 @@ class DetailsPage extends StatelessWidget {
         child: Column(
           children: [
             DetailPageAppBar(),
-            SizedBox(height: 10),
+            SizedBox(height: 5),
             DetailImage(),
             SizedBox(height: 15),
             MoreImages(),
