@@ -27,41 +27,42 @@ class SearchBar extends StatelessWidget {
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.start,
+            mainAxisSize: MainAxisSize.max,
             children: [
-              Container(
-                margin: EdgeInsets.only(top: 10),
-                padding: EdgeInsets.only(left: 20, right: 20),
-                width: 280,
-                height: 40,
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
-                    color: Utils.iScreenBackground,
-                    boxShadow: [
-                      BoxShadow(
-                          color: Colors.grey.shade400,
-                          offset: Offset(-4, 4),
-                          blurRadius: 5,
-                          spreadRadius: 1),
-                      BoxShadow(
-                          color: Colors.white,
-                          offset: Offset(4, -4),
-                          blurRadius: 5,
-                          spreadRadius: 1)
-                    ]),
-                child: Row(
-                  children: [
-                    Text("Search here...",
-                        style: GoogleFonts.varelaRound(
-                          fontSize: 14,
-                          color: Utils.searchBarTextColor,
-                        )),
-                    Spacer(),
-                    Icon(Icons.search,
-                        size: 12, color: Utils.searchBarIconColor),
-                  ],
+              Expanded(
+                child: Container(
+                  margin: EdgeInsets.only(top: 10, right: 10),
+                  padding: EdgeInsets.only(left: 20, right: 20),
+                  height: 40,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: Utils.iScreenBackground,
+                      boxShadow: [
+                        BoxShadow(
+                            color: Colors.grey.shade400,
+                            offset: Offset(-4, 4),
+                            blurRadius: 5,
+                            spreadRadius: 1),
+                        BoxShadow(
+                            color: Colors.white,
+                            offset: Offset(4, -4),
+                            blurRadius: 5,
+                            spreadRadius: 1)
+                      ]),
+                  child: Row(
+                    children: [
+                      Text("Search here...",
+                          style: GoogleFonts.varelaRound(
+                            fontSize: 14,
+                            color: Utils.searchBarTextColor,
+                          )),
+                      Spacer(),
+                      Icon(Icons.search,
+                          size: 12, color: Utils.searchBarIconColor),
+                    ],
+                  ),
                 ),
               ),
-              Spacer(),
               Container(
                 margin: EdgeInsets.only(top: 10),
                 height: 40,

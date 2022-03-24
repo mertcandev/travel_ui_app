@@ -1,8 +1,8 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:travel_ui_app/pages/splash_page.dart';
 import 'package:flutter/services.dart';
+import 'package:travel_ui_app/pages/splash_page.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
