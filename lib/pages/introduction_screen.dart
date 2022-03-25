@@ -1,13 +1,19 @@
-// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
+// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors, use_key_in_widget_constructors
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:travel_ui_app/pages/main_page.dart';
-import 'package:travel_ui_app/utilities.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
+import 'package:travel_ui_app/models/intro_models.dart';
+import 'package:travel_ui_app/pages/main_page.dart';
+import 'package:travel_ui_app/utilities.dart';
+
 class IntroductionScreen extends StatelessWidget {
-  const IntroductionScreen({Key? key}) : super(key: key);
+  IntroModel? introModel;
+  IntroductionScreen({
+    Key? key,
+    this.introModel,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -21,10 +27,10 @@ class IntroductionScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Image.asset("assets/trip1.png", height: 300, width: 300),
+              Image.asset(Utils.image, height: 300, width: 300),
               SizedBox(height: 40),
               Text(
-                "Discover a Hotel & Resort\nto Book a Suitable Room",
+                Utils.title,
                 textAlign: TextAlign.center,
                 style: GoogleFonts.varelaRound(
                     fontSize: 30,
@@ -35,7 +41,7 @@ class IntroductionScreen extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 35),
                 child: Text(
-                  "The hotel and resort business is one of the best and loyal business in the global market. We are the agency that helps to book you a good room in a suitable palace at a reasonable price.",
+                  Utils.description,
                   textAlign: TextAlign.center,
                   style: GoogleFonts.varelaRound(
                       fontSize: 14, color: Utils.iBodyTextColor),

@@ -2,13 +2,13 @@
 
 import 'package:flutter/material.dart';
 import 'package:travel_ui_app/utilities.dart';
-import 'package:travel_ui_app/widgets/main_header.dart';
-import 'package:travel_ui_app/widgets/our_properties.dart';
-import 'package:travel_ui_app/widgets/places.dart';
-import 'package:travel_ui_app/widgets/popular.dart';
-import 'package:travel_ui_app/widgets/popular_properties.dart';
-import 'package:travel_ui_app/widgets/properties.dart';
-import 'package:travel_ui_app/widgets/search.dart';
+import 'package:travel_ui_app/widgets/main_page_widgets/main_header.dart';
+import 'package:travel_ui_app/widgets/main_page_widgets/our_properties.dart';
+import 'package:travel_ui_app/widgets/main_page_widgets/places.dart';
+import 'package:travel_ui_app/widgets/main_page_widgets/popular.dart';
+import 'package:travel_ui_app/widgets/main_page_widgets/popular_properties.dart';
+import 'package:travel_ui_app/widgets/main_page_widgets/properties.dart';
+import 'package:travel_ui_app/widgets/main_page_widgets/search.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({Key? key}) : super(key: key);

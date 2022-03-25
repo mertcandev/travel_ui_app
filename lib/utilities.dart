@@ -10,9 +10,9 @@ class Utils {
   static const Color searchBarTextColor = Color(0xff595959);
   static const Color searchBarIconColor = Color(0xff263238);
   static const Color propertyNameColor = Color(0xff292931);
-  static BoxShadow genericBoxShadow = BoxShadow(
-      color: Utils.mainOrange.withOpacity(0.2),
-      blurRadius: 7,
-      spreadRadius: 1,
-      offset: const Offset(0, 0));
+
+  static const image = "assets/trip1.png";
+  static const title = "Discover a Hotel & Resort\nto Book a Suitable Room ";
+  static const description =
+      "The hotel and resort business is one of the best and loyal business in the global market. We are the agency that helps to book you a good room in a suitable palace at a reasonable price.";
 }

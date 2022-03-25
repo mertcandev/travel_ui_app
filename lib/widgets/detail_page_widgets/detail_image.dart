@@ -2,9 +2,10 @@
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:travel_ui_app/models/detail_model.dart';
 
 class DetailImage extends StatelessWidget {
-  const DetailImage({Key? key}) : super(key: key);
+  DetailModel? selectedModel;
 
   @override
   Widget build(BuildContext context) {
