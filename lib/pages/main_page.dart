@@ -40,7 +40,6 @@ class _MainPageState extends State<MainPage> {
                     Places(),
                     SizedBox(height: 20),
                     OurProperties(),
-                    SizedBox(height: 10),
                     Properties(),
                     SizedBox(height: 10),
                     Popular(),
