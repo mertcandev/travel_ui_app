@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
+
 import 'package:travel_ui_app/utilities.dart';
 import 'package:travel_ui_app/widgets/main_page_widgets/main_header.dart';
 import 'package:travel_ui_app/widgets/main_page_widgets/our_properties.dart';
@@ -11,8 +12,6 @@ import 'package:travel_ui_app/widgets/main_page_widgets/properties.dart';
 import 'package:travel_ui_app/widgets/main_page_widgets/search.dart';
 
 class MainPage extends StatefulWidget {
-  const MainPage({Key? key}) : super(key: key);
-
   @override
   State<MainPage> createState() => _MainPageState();
 }
@@ -30,12 +29,13 @@ class _MainPageState extends State<MainPage> {
             HeaderWidget(),
             SizedBox(height: 20),
             SearchBar(),
+            SizedBox(height: 15),
             Expanded(
               child: SingleChildScrollView(
                 physics: BouncingScrollPhysics(),
                 child: Column(
                   children: [
-                    SizedBox(height: 30),
+                    SizedBox(height: 15),
                     Places(),
                     SizedBox(height: 20),
                     OurProperties(),

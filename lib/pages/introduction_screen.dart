@@ -1,20 +1,13 @@
-// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors, use_key_in_widget_constructors
+// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors, use_key_in_widget_constructors, must_be_immutable
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
-import 'package:travel_ui_app/models/intro_models.dart';
 import 'package:travel_ui_app/pages/main_page.dart';
 import 'package:travel_ui_app/utilities.dart';
 
 class IntroductionScreen extends StatelessWidget {
-  IntroModel? introModel;
-  IntroductionScreen({
-    Key? key,
-    this.introModel,
-  });
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(

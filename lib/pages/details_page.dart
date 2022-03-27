@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, sized_box_for_whitespace, prefer_const_literals_to_create_immutables, use_key_in_widget_constructors
+// ignore_for_file: prefer_const_constructors, sized_box_for_whitespace, prefer_const_literals_to_create_immutables, use_key_in_widget_constructors, must_be_immutable
 
 import 'package:flutter/material.dart';
 
@@ -25,15 +25,26 @@ class DetailsPage extends StatelessWidget {
           children: [
             DetailPageAppBar(),
             SizedBox(height: 5),
-            DetailImage(),
+            DetailImage(
+              selectedModel: selectedModel,
+            ),
             SizedBox(height: 15),
             MoreImages(),
             SizedBox(height: 20),
             DetailAndReviewButtons(),
-            SizedBox(height: 20),
-            DetailsText(),
-            Spacer(),
-            DetailsBottom()
+            SizedBox(height: 15),
+            Expanded(
+              child: SingleChildScrollView(
+                physics: BouncingScrollPhysics(),
+                child: DetailsText(
+                  selectedModel: selectedModel,
+                ),
+              ),
+            ),
+            //Spacer(),
+            DetailsBottom(
+              selectedModel: selectedModel,
+            )
           ],
         ),
       ),

@@ -1,17 +1,22 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, use_key_in_widget_constructors, must_be_immutable
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+
 import 'package:travel_ui_app/models/detail_model.dart';
 
 class DetailImage extends StatelessWidget {
   DetailModel? selectedModel;
+  DetailImage({
+    Key? key,
+    this.selectedModel,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Stack(children: [
       Container(
-        height: MediaQuery.of(context).size.height * 0.40,
+        height: MediaQuery.of(context).size.height * 0.45,
         width: MediaQuery.of(context).size.width * 0.85,
         decoration: BoxDecoration(
           boxShadow: [
@@ -23,11 +28,11 @@ class DetailImage extends StatelessWidget {
           ],
           borderRadius: BorderRadius.circular(30),
           image: DecorationImage(
-              fit: BoxFit.cover, image: AssetImage("assets/regnum.jpg")),
+              fit: BoxFit.cover, image: AssetImage(selectedModel!.imgPath!)),
         ),
       ),
       Container(
-        height: MediaQuery.of(context).size.height * 0.40,
+        height: MediaQuery.of(context).size.height * 0.45,
         width: MediaQuery.of(context).size.width * 0.85,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
@@ -54,7 +59,7 @@ class DetailImage extends StatelessWidget {
             // ignore: prefer_const_literals_to_create_immutables
             children: [
               Text(
-                "Regnum Carya",
+                selectedModel!.name!,
                 style: GoogleFonts.varelaRound(
                     fontWeight: FontWeight.bold,
                     fontSize: 30,
@@ -69,7 +74,7 @@ class DetailImage extends StatelessWidget {
                     size: 20,
                   ),
                   Text(
-                    "Serik",
+                    selectedModel!.location!,
                     style: GoogleFonts.varelaRound(
                         fontSize: 20,
                         color: Colors.white,

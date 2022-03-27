@@ -2,10 +2,17 @@
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+
+import 'package:travel_ui_app/models/detail_model.dart';
 import 'package:travel_ui_app/utilities.dart';
 
 class DetailsText extends StatelessWidget {
-  const DetailsText({Key? key}) : super(key: key);
+  DetailModel? selectedModel;
+
+  DetailsText({
+    Key? key,
+    this.selectedModel,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -14,8 +21,7 @@ class DetailsText extends StatelessWidget {
       child: Center(
         child: RichText(
           text: TextSpan(
-              text:
-                  'Ea non tempor et laborum proident laborum aliquip tempor aliquip excepteur aliqua culpa in eu. Dolore commodo eu velit commodo id id. Labore proident velit occaecat reprehenderit ullamco aliqua reprehenderit exercitation. nostrud mollit amet. Pariatur deserunt amet exercitation duis.',
+              text: selectedModel!.description!,
               style: GoogleFonts.varelaRound(
                   fontSize: 12, color: Utils.propertyNameColor, height: 1.5),
               children: <TextSpan>[

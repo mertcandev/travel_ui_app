@@ -2,21 +2,26 @@
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+
+import 'package:travel_ui_app/models/detail_model.dart';
 import 'package:travel_ui_app/utilities.dart';
 
 class DetailsBottom extends StatelessWidget {
-  const DetailsBottom({Key? key}) : super(key: key);
-
+  DetailModel? selectedModel;
+  DetailsBottom({
+    Key? key,
+    this.selectedModel,
+  }) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(left: 30, right: 30, bottom: 30),
+      padding: EdgeInsets.only(left: 30, right: 30, bottom: 30, top: 20),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.end,
         children: [
           RichText(
             text: TextSpan(
-              text: "\$410",
+              text: "\$${selectedModel?.price}",
               style: GoogleFonts.varelaRound(
                   color: Utils.propertyNameColor,
                   fontSize: 30,

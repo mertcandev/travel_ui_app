@@ -2,11 +2,10 @@
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+
 import 'package:travel_ui_app/utilities.dart';
 
 class PopularProperties extends StatelessWidget {
-  const PopularProperties({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -18,7 +17,7 @@ class PopularProperties extends StatelessWidget {
         children: [
           Container(
             margin: EdgeInsets.symmetric(vertical: 10),
-            width: 320,
+            width: 360,
             decoration: BoxDecoration(
                 color: Utils.iScreenBackground,
                 boxShadow: [
@@ -45,7 +44,7 @@ class PopularProperties extends StatelessWidget {
                       borderRadius: BorderRadius.circular(20),
                       image: DecorationImage(
                           fit: BoxFit.cover,
-                          image: AssetImage("assets/mahal.jpg")),
+                          image: AssetImage("assets/regnum.jpg")),
                     ),
                   ),
                   SizedBox(width: 10),
@@ -58,7 +57,7 @@ class PopularProperties extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              "Villa Mahal",
+                              "Regnum Carya",
                               style: GoogleFonts.varelaRound(
                                   fontWeight: FontWeight.bold,
                                   fontSize: 20,
@@ -73,7 +72,7 @@ class PopularProperties extends StatelessWidget {
                                   size: 16,
                                 ),
                                 Text(
-                                  "Kaş",
+                                  "Serik",
                                   style: GoogleFonts.varelaRound(
                                     fontSize: 16,
                                   ),
@@ -155,11 +154,10 @@ class PopularProperties extends StatelessWidget {
                 ],
               ),
             ),
-          )
-        ,
-        Container(
+          ),
+          Container(
             margin: EdgeInsets.symmetric(vertical: 10),
-            width: 320,
+            width: 360,
             decoration: BoxDecoration(
                 color: Utils.iScreenBackground,
                 boxShadow: [
@@ -186,7 +184,7 @@ class PopularProperties extends StatelessWidget {
                       borderRadius: BorderRadius.circular(20),
                       image: DecorationImage(
                           fit: BoxFit.cover,
-                          image: AssetImage("assets/mahal.jpg")),
+                          image: AssetImage("assets/rixos.jpg")),
                     ),
                   ),
                   SizedBox(width: 10),
@@ -199,7 +197,7 @@ class PopularProperties extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              "Villa Mahal",
+                              "Rixos Downtown",
                               style: GoogleFonts.varelaRound(
                                   fontWeight: FontWeight.bold,
                                   fontSize: 20,
@@ -214,7 +212,7 @@ class PopularProperties extends StatelessWidget {
                                   size: 16,
                                 ),
                                 Text(
-                                  "Kaş",
+                                  "Antalya",
                                   style: GoogleFonts.varelaRound(
                                     fontSize: 16,
                                   ),

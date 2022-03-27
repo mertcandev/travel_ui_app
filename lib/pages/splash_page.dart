@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:travel_ui_app/models/intro_models.dart';
+
 import 'package:travel_ui_app/pages/introduction_screen.dart';
 import 'package:travel_ui_app/utilities.dart';
 
