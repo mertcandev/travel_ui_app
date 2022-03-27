@@ -17,7 +17,7 @@ class PopularProperties extends StatelessWidget {
         children: [
           Container(
             margin: EdgeInsets.symmetric(vertical: 10),
-            width: 360,
+            width: 350,
             decoration: BoxDecoration(
                 color: Utils.iScreenBackground,
                 boxShadow: [
@@ -155,9 +155,10 @@ class PopularProperties extends StatelessWidget {
               ),
             ),
           ),
+          SizedBox(width: 20),
           Container(
             margin: EdgeInsets.symmetric(vertical: 10),
-            width: 360,
+            width: 350,
             decoration: BoxDecoration(
                 color: Utils.iScreenBackground,
                 boxShadow: [

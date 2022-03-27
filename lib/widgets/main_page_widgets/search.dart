@@ -19,7 +19,7 @@ class SearchBar extends StatelessWidget {
               Text(
                 "Find Your Stay",
                 style: GoogleFonts.varelaRound(
-                    fontSize: 30,
+                    fontSize: 25,
                     color: Utils.searchExpColor,
                     fontWeight: FontWeight.bold),
               ),

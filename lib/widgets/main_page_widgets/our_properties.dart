@@ -15,14 +15,14 @@ class OurProperties extends StatelessWidget {
           Text(
             "Our Properties",
             style: GoogleFonts.varelaRound(
-                fontSize: 30,
+                fontSize: 25,
                 color: Utils.searchExpColor,
                 fontWeight: FontWeight.bold),
           ),
           Text(
             "View All",
             style:
-                GoogleFonts.varelaRound(fontSize: 16, color: Utils.mainOrange),
+                GoogleFonts.varelaRound(fontSize: 14, color: Utils.mainOrange),
           )
         ],
       ),

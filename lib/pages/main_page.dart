@@ -17,6 +17,7 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
+  var index = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -52,21 +53,55 @@ class _MainPageState extends State<MainPage> {
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
+        onTap: (int index) {
+          setState(() {
+            this.index = index;
+          });
+        },
+        currentIndex: index,
+        showSelectedLabels: false,
+        showUnselectedLabels: false,
         elevation: 10,
-        selectedItemColor: Utils.mainOrange,
-        unselectedItemColor: Utils.mainOrange.withOpacity(0.4),
+        /* selectedItemColor: Utils.mainOrange,
+        unselectedItemColor: Utils.mainOrange.withOpacity(0.4), */
         items: [
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.home,
-                size: 30,
+                size: 25,
+                color: index == 0
+                    ? Utils.mainOrange
+                    : Utils.mainOrange.withOpacity(0.4),
               ),
               label: ""),
           BottomNavigationBarItem(
-              icon: Icon(Icons.notifications, size: 25), label: ""),
+            icon: Icon(
+              Icons.notifications,
+              size: 25,
+              color: index == 1
+                  ? Utils.mainOrange
+                  : Utils.mainOrange.withOpacity(0.4),
+            ),
+            label: "",
+          ),
           BottomNavigationBarItem(
-              icon: Icon(Icons.bookmark, size: 25), label: ""),
-          BottomNavigationBarItem(icon: Icon(Icons.person, size: 25), label: "")
+              icon: Icon(
+                Icons.bookmark,
+                size: 25,
+                color: index == 2
+                    ? Utils.mainOrange
+                    : Utils.mainOrange.withOpacity(0.4),
+              ),
+              label: ""),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.person,
+                size: 25,
+                color: index == 3
+                    ? Utils.mainOrange
+                    : Utils.mainOrange.withOpacity(0.4),
+              ),
+              label: "")
         ],
       ),
     );
