@@ -15,20 +15,23 @@ class DetailImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Stack(children: [
-      Container(
-        height: MediaQuery.of(context).size.height * 0.45,
-        width: MediaQuery.of(context).size.width * 0.85,
-        decoration: BoxDecoration(
-          boxShadow: [
-            BoxShadow(
-                color: Colors.grey.shade400,
-                offset: Offset(0, 0),
-                blurRadius: 10,
-                spreadRadius: 1)
-          ],
-          borderRadius: BorderRadius.circular(30),
-          image: DecorationImage(
-              fit: BoxFit.cover, image: AssetImage(selectedModel!.imgPath!)),
+      Hero(
+        tag: selectedModel!.tag!,
+        child: Container(
+          height: MediaQuery.of(context).size.height * 0.45,
+          width: MediaQuery.of(context).size.width * 0.85,
+          decoration: BoxDecoration(
+            boxShadow: [
+              BoxShadow(
+                  color: Colors.grey.shade400,
+                  offset: Offset(0, 0),
+                  blurRadius: 10,
+                  spreadRadius: 1)
+            ],
+            borderRadius: BorderRadius.circular(30),
+            image: DecorationImage(
+                fit: BoxFit.cover, image: AssetImage(selectedModel!.imgPath!)),
+          ),
         ),
       ),
       Container(

@@ -43,14 +43,17 @@ class PropertyCard extends StatelessWidget {
               const EdgeInsets.only(top: 12, right: 12, left: 12, bottom: 15),
           child:
               Column(crossAxisAlignment: CrossAxisAlignment.center, children: [
-            Container(
-              height: 150,
-              width: 280,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20),
-                image: DecorationImage(
-                    fit: BoxFit.cover,
-                    image: AssetImage(detailModel!.imgPath!)),
+            Hero(
+              tag: detailModel!.tag!,
+              child: Container(
+                height: 150,
+                width: 280,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20),
+                  image: DecorationImage(
+                      fit: BoxFit.cover,
+                      image: AssetImage(detailModel!.imgPath!)),
+                ),
               ),
             ),
             Spacer(),
