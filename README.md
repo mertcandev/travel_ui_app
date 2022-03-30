@@ -39,6 +39,8 @@
    <a href="https://github.com/mertcandev/travel_ui_app/issues">Report Bug</a>
     ·
     <a href="https://github.com/mertcandev/travel_ui_app/issues">Request Feature</a>
+    ·
+    <a href="https://www.figma.com/@sreenadh">Design Owner</a>
   </p>
 </div>
 
@@ -78,10 +80,11 @@ Imagaine an app is ready to be your wingman in order to help you deciding your v
 
 <div align="center">
   <a href="https://github.com/mertcandev/travel_ui_app">
-    <img src="assets/sc10.png" alt="Logo" width="225" height="450">
-    <img src="assets/sc11.png" alt="Logo" width="225" height="450">
-    <img src="assets/sc12.png" alt="Logo" width="225" height="450">
-    <img src="assets/sc13.png" alt="Logo" width="225" height="450">
+    <img src="assets/sc10.png" alt="Logo" width="300" height="600">
+    <img src="assets/sc11.png" alt="Logo" width="300" height="600">
+    </br>
+    <img src="assets/sc12.png" alt="Logo" width="300" height="600">
+    <img src="assets/sc13.png" alt="Logo" width="300" height="600">
   </a>
   </div>
 
